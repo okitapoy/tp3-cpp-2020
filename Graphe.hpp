@@ -26,6 +26,10 @@ public:
     void ajouterArcs( int a_sommet1, int a_sommet2, int a_longueur, string a_nom );
     void plusCourtChemin( void );
 
+  //  void copierMatrice(int original[][0]);
+  int** initialiserMatrice(int taille);
+  int** copierMatrice(int** matriceOriginale, int taille);
+
     friend ostream & operator <<( ostream &, Graphe const & );
 };
 

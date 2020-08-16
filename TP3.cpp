@@ -57,7 +57,7 @@ lireDestinations( istream & a_in )
     vector< int > * resultat = new vector< int >();
     string reponseUtilisateur;
 
-    cout << "Entrez vos destinations séparées par des espaces : ";
+    cout << "Entrez vos destinations sï¿½parï¿½es par des espaces : ";
     getline( cin, reponseUtilisateur );
 
     istringstream entrees( reponseUtilisateur );
@@ -92,6 +92,9 @@ main( int argn, char * argv [] )
 
     ruesMontreal->plusCourtChemin();
 
+
+    exit(-1);//--------------------------********================
+
     vector< int > * destinations = lireDestinations( cin );
 
     if( 0 < destinations->size() )
@@ -101,5 +104,3 @@ main( int argn, char * argv [] )
 
     return 0;
 }
-
-
